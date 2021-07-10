@@ -1,4 +1,4 @@
-# Prediction-of-CO-and-NOX Emmision-WebApp
+# Prediction-of-CO-and-NOX Emission-WebApp
 **OBJECTIVE**: Prediction of Gas Turbine CO and NOx Emission
 
 **Description:** Predict the Gas Turbine CO and NOx Emission using 11 sensor measures aggregated over one hour (by means of average orsum) from a gas turbine located in Turkey's north western region for the purpose of studying flue gas emissions,namely CO and NOx (NO + NO2)
