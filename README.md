@@ -53,7 +53,7 @@ Attributes are on different scale. Like AT and AH are on the scale of 100 where 
 
 ![image](https://user-images.githubusercontent.com/76644910/125195745-a955fa80-e274-11eb-96f0-2c7bacffa4a6.png)
 
-**Statistical Distribution of train data**
+**Statistical Distribution of data**
 
 ![image](https://user-images.githubusercontent.com/76644910/125195783-d3a7b800-e274-11eb-8ea6-9c6d999821ed.png)
 
