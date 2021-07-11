@@ -148,6 +148,9 @@ Next we built the Random forest with the same best set of forest on all data and
 Top 5 most important features we found were V1 followed by V6, V7, V5 and V8.
 Where V1 = Old_V0 (PC V0) = 0.015 * AT + 0.35 * AFDP + 0.44 * GTEP + 0.41 * TIT -0.33 * TAT + 0.45 * TEY + 0.45 * CDP
 
+--
+--
+
 **Model Building Process of NOx**
 
 Similar steps were followed to build model for NOx emission prediction.
