@@ -37,7 +37,7 @@ Nitrogen oxides (NOx) mg/m^3
 
 **Tools Used:** Python, Jupyter-lab, Ms- Excel, Tableau
 
-**Data Information**
+## Data Information
 **Attributes, their count and data type**
 
 ![image](https://user-images.githubusercontent.com/76644910/125195698-672cb900-e274-11eb-860d-bb83f9e763a7.png)
@@ -48,7 +48,7 @@ Nitrogen oxides (NOx) mg/m^3
 
 Attributes are on different scale. Like AT and AH are on the scale of 100 where has AP and TIT are on scale of 1000. So for ML models data set is scaled using standard scalar.
 
-**Statistical Analysis**
+## Statistical Analysis
 **Statistical Summary of data**
 
 ![image](https://user-images.githubusercontent.com/76644910/125195745-a955fa80-e274-11eb-96f0-2c7bacffa4a6.png)
@@ -69,14 +69,14 @@ Attributes are on different scale. Like AT and AH are on the scale of 100 where 
 
 ![image](https://user-images.githubusercontent.com/76644910/125195926-7f510800-e275-11eb-8197-db9c9aa5109a.png)
 
-**Model Building**
+## Model Building
 
 First we split the data in train, cross validation and test set in the ratio of 60:20:20.
 We built model on train set and tuned it on cross validation. Test data was kept aside for final evaluation.
 Separate ML models were built for prediction of CO and NOx emission.
 Using Forward addition and Backward Elimination method significant predictor variables were selected for CO and NOx prediction.
 
-**Model Building Process of CO**
+### Model Building Process of CO
 
 **Feature Engineering**
 **Principle Component Analysis**
@@ -149,10 +149,9 @@ Top 5 most important features we found were V1 followed by V6, V7, V5 and V8.
 Where V1 = Old_V0 (PC V0) = 0.015 * AT + 0.35 * AFDP + 0.44 * GTEP + 0.41 * TIT -0.33 * TAT + 0.45 * TEY + 0.45 * CDP
 
 
-__
-__
+----
 
-**Model Building Process of NOx**
+### Model Building Process of NOx
 
 Similar steps were followed to build model for NOx emission prediction.
 
