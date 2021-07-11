@@ -112,11 +112,11 @@ After Feature transformation we again Linear Regression model and found Adjusted
 
 Next we applied ridge regression, Decision Tree, Random Forest and Support Vector Machine on train data and tuned it on cross validation set. 
 
-Performance of Decision Tree on train and cross validation for different depth
+*Performance of Decision Tree on train and cross validation for different depth*
 
 ![image](https://user-images.githubusercontent.com/76644910/125196095-1c13a580-e276-11eb-9a79-1954a6d91f05.png)
 
-Performance of Random Forest on train & cross validation for different no. of features & max depth 9
+*Performance of Random Forest on train & cross validation for different no. of features & max depth 9*
 
 ![image](https://user-images.githubusercontent.com/76644910/125196120-33529300-e276-11eb-836a-f2d2bb5e6858.png)
 
