@@ -224,4 +224,4 @@ Where V5 = Old_V4 (PC V4) = 0.28 * AT + 0.15 * AP + 0.12 * AH + 0.65 * AFDP - 0.
 Heysem Kaya, PÄ±nar TÃ¼fekci and ErdinÃ§ Uzun. 'Predicting CO and NOx emissions from gas turbines: novel data and a benchmark PEMS', Turkish Journal of Electrical Engineering & Computer Sciences, vol. 27, 2019, pp. 4783-4796
 
 
-x-----------------------x-----------------------x------------------------x-----------------------x----------------------------x----------------------x
+x-----------------------x-----------------------x------------------------x-----------------------x----------------------------x
