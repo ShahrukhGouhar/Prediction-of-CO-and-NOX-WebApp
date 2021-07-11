@@ -85,6 +85,10 @@ So we applied PCA for removing multi – collinearity.  Below figure represent h
 
 ![image](https://user-images.githubusercontent.com/76644910/125195976-b45d5a80-e275-11eb-827d-7bb132498cf0.png)
 
+V0, V1, V2 and V3 are principle components obtained after PCA.
+
+Each row represents the coefficient of linear combination for respective principle component.
+
 Linear Regressing Model built on above described PCA showed Adjusted_R^2 = 0.57 with MSE = 1.78 on cross validation set.
 
 **Polynomial Feature Transformation**
@@ -92,6 +96,16 @@ Next we applied *Polynomial Feature transformation to get new features as a comb
 Below figure represent how features were combined after polynomial feature transformation
 
 ![image](https://user-images.githubusercontent.com/76644910/125196034-e4a4f900-e275-11eb-86bf-7ade9cab02c2.png)
+
+Example for how variables have combined
+
+V0 = (Old_VO^0) * (Old_V1^0) * (Old_V2^0) * (Old_V3^0)
+
+V1 = (Old_VO^1) * (Old_V1^0) * (Old_V2^0) * (Old_V3^0)
+
+V5 = (Old_VO^2) * (Old_V1^0) * (Old_V2^0) * (Old_V3^0)
+
+V6 = (Old_VO^1) * (Old_V1^1) * (Old_V2^0) * (Old_V3^0) ...... & soon
 
 Old_Vi’s are principle components and Vi’s are new set of features after feature transformation.
 After Feature transformation we again Linear Regression model and found Adjusted_R^2 = 0.669 with MSE = 1.38 on cross validation set.
@@ -145,12 +159,26 @@ Below figure represent how predictors were combined after PCA. VO, V1, V2, V3, V
 
 ![image](https://user-images.githubusercontent.com/76644910/125196291-fb981b00-e276-11eb-8bd5-782188b69959.png)
 
+V0, V1, V2, V3, V4 AND V5 are principle components obtained after PCA.
+
+Each row represents the coefficient of linear combination for respective principle component.
+
 Linear Regressing Model built on above described PCA showed Adjusted_R^2 = 0.38 with MSE = 81.13 on cross validation set. Linear regression model has very poor performance. 
 
 **Polynomial Feature Transformation**
 Below figure represent how features were combined after polynomial feature transformation.
 
 ![image](https://user-images.githubusercontent.com/76644910/125196325-23877e80-e277-11eb-943d-e72a21a0281e.png)
+
+Example for how variables have combined
+
+V0 = (Old_VO^0) * (Old_V1^0) * (Old_V2^0) * (Old_V3^0) * (Old_V4^0) * (Old_V5^0)
+
+V1 = (Old_VO^1) * (Old_V1^0) * (Old_V2^0) * (Old_V3^0) * (Old_V4^0) * (Old_V5^0)
+
+V7 = (Old_VO^2) * (Old_V1^0) * (Old_V2^0) * (Old_V3^0) * (Old_V4^0) * (Old_V5^0)
+
+V8 = (Old_VO^1) * (Old_V1^1) * (Old_V2^0) * (Old_V3^0) * (Old_V4^0) * (Old_V5^0) ...... & soon
 
 Old_Vi’s are principle components and Vi’s are new set of features after feature transformation.
 After Feature transformation we again Linear Regression model and found Adjusted_R^2 = 0.596 with MSE = 52.81 on cross validation set.
