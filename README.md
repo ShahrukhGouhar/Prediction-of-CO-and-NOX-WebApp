@@ -79,6 +79,7 @@ Using Forward addition and Backward Elimination method significant predictor var
 ### Model Building Process of CO
 
 **Feature Engineering**
+
 **Principle Component Analysis**
 In statistical analysis using heat map we saw there was high multi – collinearity among the predictors.
 So we applied PCA for removing multi – collinearity.  Below figure represent how predictors were combined after PCA. VO, V1, V2, V3 are principle components we found after PCA.
