@@ -1,4 +1,5 @@
 # Prediction-of-CO-and-NOX Emission-WebApp
+
 **OBJECTIVE**: Prediction of Gas Turbine CO and NOx Emission
 
 **Description:** Predict the Gas Turbine CO and NOx Emission using 11 sensor measures aggregated over one hour (by means of average orsum) from a gas turbine located in Turkey's north western region for the purpose of studying flue gas emissions,namely CO and NOx (NO + NO2)
@@ -38,6 +39,7 @@ Nitrogen oxides (NOx) mg/m^3
 **Tools Used:** Python, Jupyter-lab, Ms- Excel, Tableau
 
 ## Data Information
+
 **Attributes, their count and data type**
 
 ![image](https://user-images.githubusercontent.com/76644910/125195698-672cb900-e274-11eb-860d-bb83f9e763a7.png)
@@ -49,6 +51,7 @@ Nitrogen oxides (NOx) mg/m^3
 Attributes are on different scale. Like AT and AH are on the scale of 100 where has AP and TIT are on scale of 1000. So for ML models data set is scaled using standard scalar.
 
 ## Statistical Analysis
+
 **Statistical Summary of data**
 
 ![image](https://user-images.githubusercontent.com/76644910/125195745-a955fa80-e274-11eb-96f0-2c7bacffa4a6.png)
@@ -81,6 +84,7 @@ Using Forward addition and Backward Elimination method significant predictor var
 **Feature Engineering**
 
 **Principle Component Analysis**
+
 In statistical analysis using heat map we saw there was high multi – collinearity among the predictors.
 So we applied PCA for removing multi – collinearity.  Below figure represent how predictors were combined after PCA. VO, V1, V2, V3 are principle components we found after PCA.
 
@@ -93,6 +97,7 @@ Each row represents the coefficient of linear combination for respective princip
 Linear Regressing Model built on above described PCA showed Adjusted_R^2 = 0.57 with MSE = 1.78 on cross validation set.
 
 **Polynomial Feature Transformation**
+
 Next we applied *Polynomial Feature transformation to get new features as a combination of old*
 Below figure represent how features were combined after polynomial feature transformation
 
@@ -159,6 +164,7 @@ Similar steps were followed to build model for NOx emission prediction.
 **Feature Engineering**
 
 **Principle Component Analysis**
+
 Below figure represent how predictors were combined after PCA. VO, V1, V2, V3, V4, V5  are principle components we found after PCA
 
 ![image](https://user-images.githubusercontent.com/76644910/125196291-fb981b00-e276-11eb-8bd5-782188b69959.png)
@@ -170,6 +176,7 @@ Each row represents the coefficient of linear combination for respective princip
 Linear Regressing Model built on above described PCA showed Adjusted_R^2 = 0.38 with MSE = 81.13 on cross validation set. Linear regression model has very poor performance. 
 
 **Polynomial Feature Transformation**
+
 Below figure represent how features were combined after polynomial feature transformation.
 
 ![image](https://user-images.githubusercontent.com/76644910/125196325-23877e80-e277-11eb-943d-e72a21a0281e.png)
@@ -203,6 +210,7 @@ Below table summarizes the performance of these models on cross validation set.
 We found random forest performs best on cross validation set with MSE of 26.78.
 
 **HYPERPARAMETER OPTIMIZATION USING BAYESIAN OPTIMIZATION**
+
 We applied Bayesian Optimization and 5 fold cross validation to find best parameter for Random Forest.
 In below table shows the range over which hyper parameters of Random Forest were varied for selection of best parameter
 
